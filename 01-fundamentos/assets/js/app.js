@@ -1,3 +1,7 @@
+alert('hola desde app.js');
+
+
+
 console.log(console.log('hello world'));
 
 let a = 10,
@@ -19,3 +23,8 @@ console.log({ c });
 c = 'Hola de nuevo ';
 
 console.table({a, b, c, x});
+
+//ejemplo del porque no usar var
+var miNombre = 'alejandro'
+
+var outerWidth = 1000000000;

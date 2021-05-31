@@ -7,3 +7,9 @@ let juego = [
     'chrono',
     'battlefield'
 ]
+
+console.log('Largo:', juego.length);
+
+let primero = juego[0]
+
+let ultimo = juego[3];

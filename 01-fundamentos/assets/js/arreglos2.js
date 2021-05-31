@@ -21,3 +21,7 @@ console.log({primer, ultimo});
 juego.forEach((elemento, indice, arr) => {
     console.log({elemento, indice, err});
 });
+
+//el metodo .push para agregar a nuestro array 
+
+juego.push( 'Mortal kombat' );

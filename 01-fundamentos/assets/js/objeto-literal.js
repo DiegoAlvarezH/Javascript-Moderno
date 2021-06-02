@@ -20,5 +20,10 @@ let personaje = {
 //imprime en orden alfabetico, pero VScode lo puede arreglar tambien si a la hora de escribir se te olvida
 console.log(personaje);
 console.log('Nombre', personaje.nombre);
-console.log('Nombre', personaje.nombre);
+console.log('Nombre', personaje['nombre']);
+console.log('Edad', personaje.edad);
 
+console.log('Coords', personaje.coords);
+console.log('Lat', personaje.coords.lat);
+
+console.log('No. Trajes', personaje.trajes.length);

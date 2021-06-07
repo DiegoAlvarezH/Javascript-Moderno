@@ -3,9 +3,11 @@
 
 //un metodo es una funcion que se encuentra dentro de un objeto
 
+//todas las funciones en js retornan undefined si no le damos dicha instruccion
 
 function saludar(nombre){
     console.log('Hola ' + nombre);
+    return 1;
 }
 
 const saludar2 = function(nombre){

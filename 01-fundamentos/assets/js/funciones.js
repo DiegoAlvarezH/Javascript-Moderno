@@ -5,6 +5,8 @@
 
 //todas las funciones en js retornan undefined si no le damos dicha instruccion
 
+//undefined en las funciones
+
 function saludar(nombre){
     console.log('Hola ' + nombre);
     return 1;

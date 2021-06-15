@@ -54,8 +54,9 @@ Object.freeze(personaje)
 
 //pero este no congela las propiedades de los objetos que estan dentro del objeto padre, o muy bien pasarle el freeze a dicha propiedad
 personaje.dinero = 1000000000;
-personaje.direccion.ubicacion = 'Costa rica';
+personaje.direccion.ubicacion = 'Costa Rica';
 
+//mostrar un arreglo con posiciones
 const propiedades = Object.getOwnPropertyNames(personaje);
 const valores = Object.values(personaje);
 console.log({propiedades, valores});

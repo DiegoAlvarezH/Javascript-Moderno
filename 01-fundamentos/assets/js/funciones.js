@@ -9,31 +9,48 @@
 
 function saludar(nombre){
     console.log('Hola ' + nombre);
-    return 1;
+    return [1,2,3,4,5];
 }
 
-const saludar2 = function(nombre){
+const saludar2 = function( nombre ) {
     console.log('Hola ' + nombre);
 }
 
 const saludarFlecha = () => {
-    console.log('Hola flecha');
+    console.log('Hola ');
 }
  
 const saludarFlecha2 = (nombre) => {
-    console.log('Hola flecha' + nombre);
+    console.log('Hola ' + nombre);
 }
 
+// saludarFlecha2('Alejo');
 
 //funcion anonima no tiene nombre pero se asigna
 // const saludar2 = function(){
 //     console.log('hola mundo');
 // }
 
-
-saludar('Diego', 22, true, 'Colombia'); 
+const retornoDeSaludar = saludar('Diego', 22, true, 'Colombia'); //1
+// console.log(retornoDeSaludar);
 // saludar2('Diego')
-saludarFlecha2('Alejo');
-
-
 //llamar con ();
+
+function sumar(a, b){
+    return a + b;
+}
+
+//las funciones flecha se pueden retornar en una misma linea si solo tiene una linea de codigo.
+const sumar2 = (a,b) => a + b;
+// const sumar2 = (a,b) => {
+//     return a+ b; 
+// }
+
+function getAleatorio() {
+    return Math.random();
+}
+
+const getAleatorio2 = () => Math.random()
+
+
+console.log( getAleatorio2() );

@@ -23,7 +23,7 @@ const [casado, vivo, nombre, saludo] = imprimeArgumentos2(10, true, false, 'Fern
 console.log({casado, vivo, nombre, saludo});
 
 //asignar nuevos valores
-const {apellid: nuevoApellido} = crearPersona2('fernando', 'alvarez');
+const {apellido: nuevoApellido} = crearPersona('fernando', 'alvarez');
 console.log({nuevoApellido});
 
 const tony = {

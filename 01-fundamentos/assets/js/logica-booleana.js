@@ -18,12 +18,27 @@ console.log( !false);
 
 console.log( !regresaFalse());
 
-//se aplica con &&
-console.warn('And');
+//se aplica con && operador and
+console.warn('And'); //true si todos los valores son verdaderos
 console.log(true && true); //true
 console.log(true && false); //false
 console.log(true && !false); //true
 
 console.log('========');
-console.log(regresaFalse() &&);
+//cuando la primera instruccion regresa false, solo se ejecuta regresaFalse()
+// es decir la que se ejecute primero 
+console.log(regresaFalse() && regresaTrue()); //false
+console.log(regresaTrue() && regresaFalse());
+
+console.log("+++++++++++++++++");
+//Por lo menos una condicion debe dar true y siempre va a regresar true
+console.warn('OR');
+console.log( true || false);
+console.log( false || false);
+
+console.log(regresaTrue() || regresaFalse());
+
+
+
+
 

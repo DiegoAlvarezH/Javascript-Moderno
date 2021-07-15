@@ -38,7 +38,24 @@ console.log( false || false);
 
 console.log(regresaTrue() || regresaFalse());
 
+console.warn('Asignaciones')
 
+const soyUndefined = undefined;
+const soyNull = null;
+const soyFalso = false;
 
+const a1 = true && 'hola mundo';
+//no es tan comun hacer asignaciones con and &&
+const a2 = 'Hola' && 'Mundo' && soyFalso;
+const a3 = soyFalso || 'Ya no soy falso';
+//es la primer cosa que se ejecute
+const a4 = soyFalso || soyUndefined || soyNull || 'ya no soy falso de nuevo' || true;
+const a5 = soyFalso || soyUndefined || regresaTrue() || 'ya no soy falso de nuevo' || true;
 
+console.log({a1, a2, a3, a4, a5});
 
+if(regresaFalse() && regresaTrue() && (true || false || true)) {
+    console.log('procesando');
+}else {
+    console.log('hacer otra cosa');
+}
